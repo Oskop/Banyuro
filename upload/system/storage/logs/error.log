@@ -1,0 +1,10 @@
+2019-12-19 0:19:59 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'banyuro' in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 7
+2019-12-19 0:19:59 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 10
+2019-12-19 0:19:59 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 10
+2019-12-19 0:19:59 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\opencart\upload\install\controller\install\step_3.php on line 280
+2019-12-19 0:19:59 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\opencart\upload\install\controller\install\step_3.php on line 280
+2019-12-19 0:20:15 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'banyuro' in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 7
+2019-12-19 0:20:15 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 10
+2019-12-19 0:20:15 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\opencart\upload\system\library\db\mysqli.php on line 10
+2019-12-19 0:20:15 - PHP Notice:  Undefined variable: mysql in C:\xampp\htdocs\opencart\upload\install\controller\install\step_3.php on line 280
+2019-12-19 0:20:15 - PHP Notice:  Trying to get property 'connect_error' of non-object in C:\xampp\htdocs\opencart\upload\install\controller\install\step_3.php on line 280
