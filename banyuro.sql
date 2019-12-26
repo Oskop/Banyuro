@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2019 at 07:23 AM
+-- Generation Time: Dec 26, 2019 at 04:06 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -48,7 +48,8 @@ CREATE TABLE `oc_address` (
 --
 
 INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`, `custom_field`) VALUES
-(1, 1, 'Os', 'Kop', '', 'Jln. Mujaher', '', 'Tegal', '52111', 100, 1516, '');
+(1, 1, 'Os', 'Kop', '', 'Jln. Mujaher', '', 'Tegal', '52111', 100, 1516, ''),
+(2, 2, 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 100, 1516, '');
 
 -- --------------------------------------------------------
 
@@ -264,13 +265,16 @@ CREATE TABLE `oc_banner_image` (
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
-(100, 7, 1, 'MacBookAir', '', 'catalog/teh gelas.jpg', 0),
+(123, 7, 1, 'Teh Gelas', '', 'catalog/teh gelas.jpg', 0),
+(124, 7, 1, 'Sprite', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/250 ml.jpg', 0),
 (101, 6, 1, 'Aqua', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/Mineral/cups-220ml.png', 0),
-(105, 8, 1, 'Coca Cola', '', 'catalog/demo/manufacturer/cocacola.png', 0),
-(104, 8, 1, 'Sprite', '', 'catalog/demo/manufacturer/sony.png', 0),
-(99, 7, 1, 'iPhone 6', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/250 ml.jpg', 0),
-(103, 8, 1, 'Fanta', '', 'catalog/demo/manufacturer/redbull.png', 0),
-(102, 8, 1, 'Aqua', '', 'catalog/demo/manufacturer/nfl.png', 0);
+(122, 8, 1, 'Frestea', '', 'catalog/Frestea/Frestea-logo-2163EFBFC7-seeklogo.com.png', 0),
+(120, 8, 1, 'Fanta', '', 'catalog/Fanta/1200px-FantaLogo.svg.png', 0),
+(121, 8, 1, 'Aqua', '', 'catalog/Aqua/aqua-logo-new-2.png', 0),
+(118, 8, 1, 'Le Minerale', '', 'catalog/Le Minerale/Logo_Le_Minerale.png', 0),
+(119, 8, 1, 'Sprite', '', 'catalog/Sprite/Sprite_logo.jpg', 0),
+(117, 8, 1, 'Coca Cola', '', 'catalog/demo/manufacturer/cocacola.png', 0),
+(116, 8, 1, 'Nu Green Tea', '', 'catalog/Nu Green Tea/nu-green-tea-logo-19EFC68E27-seeklogo.com.png', 0);
 
 -- --------------------------------------------------------
 
@@ -793,7 +797,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 (1, 'Pound Sterling', 'GBP', '£', '', '2', 0.61250001, 1, '2014-09-25 14:40:00'),
 (2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2019-12-19 02:37:24'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.78460002, 1, '2014-09-25 14:40:00'),
-(4, 'Rupiah', 'IND', 'Rp', '', '', 1.00000000, 1, '2019-12-24 06:17:35');
+(4, 'Rupiah', 'IND', 'Rp', '', '', 1.00000000, 1, '2019-12-26 02:39:32');
 
 -- --------------------------------------------------------
 
@@ -831,7 +835,8 @@ CREATE TABLE `oc_customer` (
 --
 
 INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `language_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `custom_field`, `ip`, `status`, `safe`, `token`, `code`, `date_added`) VALUES
-(1, 1, 0, 1, 'Ilham', 'Muzani', 'ilham@gmail.com', '085810555362', '', '029ac82d1afd5190dcea775ae137fff3a537be0a', 'Ub78aPwVr', NULL, NULL, 0, 1, '', '::1', 1, 0, '', '', '2019-12-19 10:13:53');
+(1, 1, 0, 1, 'Ilham', 'Muzani', 'ilham@gmail.com', '085810555362', '', '029ac82d1afd5190dcea775ae137fff3a537be0a', 'Ub78aPwVr', NULL, NULL, 0, 1, '', '::1', 1, 0, '', '', '2019-12-19 10:13:53'),
+(2, 1, 0, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', 'ce3e6c4033fcf7b79e945bbcf6751d98eb06086f', '8v6Ha5ieG', NULL, NULL, 0, 2, '', '::1', 1, 0, '', '', '2019-12-26 09:51:06');
 
 -- --------------------------------------------------------
 
@@ -957,7 +962,8 @@ CREATE TABLE `oc_customer_ip` (
 --
 
 INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
-(1, 1, '::1', '2019-12-19 10:13:55');
+(1, 1, '::1', '2019-12-19 10:13:55'),
+(2, 2, '::1', '2019-12-26 09:51:08');
 
 -- --------------------------------------------------------
 
@@ -2114,7 +2120,14 @@ INSERT INTO `oc_googleshopping_product` (`product_advertise_google_id`, `product
 (51, 100, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
 (52, 101, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
 (53, 102, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
-(54, 103, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
+(54, 103, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(55, 104, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(56, 105, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(57, 106, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(58, 107, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(59, 108, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(60, 109, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(61, 110, 0, NULL, 'pending', 0, 0, 0, '0.0000', '0.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -2735,7 +2748,8 @@ CREATE TABLE `oc_order` (
 INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, `store_name`, `store_url`, `customer_id`, `customer_group_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `custom_field`, `payment_firstname`, `payment_lastname`, `payment_company`, `payment_address_1`, `payment_address_2`, `payment_city`, `payment_postcode`, `payment_country`, `payment_country_id`, `payment_zone`, `payment_zone_id`, `payment_address_format`, `payment_custom_field`, `payment_method`, `payment_code`, `shipping_firstname`, `shipping_lastname`, `shipping_company`, `shipping_address_1`, `shipping_address_2`, `shipping_city`, `shipping_postcode`, `shipping_country`, `shipping_country_id`, `shipping_zone`, `shipping_zone_id`, `shipping_address_format`, `shipping_custom_field`, `shipping_method`, `shipping_code`, `comment`, `total`, `order_status_id`, `affiliate_id`, `commission`, `marketing_id`, `tracking`, `language_id`, `currency_id`, `currency_code`, `currency_value`, `ip`, `forwarded_ip`, `user_agent`, `accept_language`, `date_added`, `date_modified`) VALUES
 (1, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'Ilham', 'Muzani', 'ilham@gmail.com', '088387236831', '', '[]', 'Ilham', 'Muzani', 'None', 'Jalan Jalan', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Ilham', 'Muzani', 'None', 'Jalan Jalan', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Flat Shipping Rate', 'flat.flat', 'DIantar di depan rumah, jangan lupa bunyikan bel.', '338000.0000', 2, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 11:28:00', '2019-12-24 11:30:13'),
 (2, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'indri', 'tri puji', 'tripuji.indriyani@gmail.com', '082324196773', '', '[]', 'indri', 'tri puji', '', 'tegal', '', 'Tegal', '', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BCA', 'bank_bca', 'indri', 'tri puji', '', 'adiwerna', '', 'Tegal', '', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', '', '108500.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 12:42:45', '2019-12-24 12:42:45'),
-(3, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'Muhammad', 'Wijaya', 'oskop17@gmail.com', '089765432345', '', '[]', 'Muhammad', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Muhammad ', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Grab Shipping Rate', 'hp_grab.hp_grab', '', '938000.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 12:49:02', '2019-12-24 12:49:02');
+(3, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'Muhammad', 'Wijaya', 'oskop17@gmail.com', '089765432345', '', '[]', 'Muhammad', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Muhammad ', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Grab Shipping Rate', 'hp_grab.hp_grab', '', '938000.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 12:49:02', '2019-12-24 12:49:02'),
+(4, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 2, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', '', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BRI Syariah', 'bank_bri_syariah', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', 'Nanti Saya Jemput', '293000.0000', 2, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-26 09:54:31', '2019-12-26 09:54:49');
 
 -- --------------------------------------------------------
 
@@ -2762,7 +2776,8 @@ INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id
 (3, 1, 0, 0, '', '2019-12-24 11:30:13'),
 (4, 1, 2, 0, '', '2019-12-24 11:30:13'),
 (5, 2, 1, 0, '', '2019-12-24 12:42:45'),
-(6, 3, 1, 0, '', '2019-12-24 12:49:02');
+(6, 3, 1, 0, '', '2019-12-24 12:49:02'),
+(7, 4, 2, 1, 'Please transfer to the Bank Account Number\n\nilham 089765432345\n\nOrder will be sent after we receive payment from you.', '2019-12-26 09:54:49');
 
 -- --------------------------------------------------------
 
@@ -2809,7 +2824,9 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `n
 (3, 2, 52, 'Teh Botol Sosro 1L (12 pcs) Dus / Karton', 'Air', 1, '99500.0000', '99500.0000', '0.0000', 0),
 (4, 3, 101, 'RootBeer Kaleng 330mL (24 pcs) Dus / Karton', 'Air', 2, '115000.0000', '230000.0000', '0.0000', 0),
 (5, 3, 64, 'Fanta Botol / Pet 250mL (12 pcs) Dus / Karton', 'Air', 3, '42000.0000', '126000.0000', '0.0000', 0),
-(6, 3, 85, 'Coca-Cola Botol / Pet 1,5L (12 pcs) Dus / Karton', 'Air', 4, '144000.0000', '576000.0000', '0.0000', 0);
+(6, 3, 85, 'Coca-Cola Botol / Pet 1,5L (12 pcs) Dus / Karton', 'Air', 4, '144000.0000', '576000.0000', '0.0000', 0),
+(7, 4, 74, 'Aqua Botol 1L (12 pcs) Dus / Karton', 'Air', 3, '48000.0000', '144000.0000', '0.0000', 0),
+(8, 4, 86, 'Aqua Botol 1,5L (12 pcs) Dus / Karton', 'Air', 2, '70000.0000', '140000.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2929,7 +2946,10 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (9, 2, 'total', 'Total', '108500.0000', 9),
 (10, 3, 'sub_total', 'Sub-Total', '932000.0000', 1),
 (11, 3, 'shipping', 'Grab Shipping Rate', '6000.0000', 3),
-(12, 3, 'total', 'Total', '938000.0000', 9);
+(12, 3, 'total', 'Total', '938000.0000', 9),
+(13, 4, 'sub_total', 'Sub-Total', '284000.0000', 1),
+(14, 4, 'shipping', 'Gojek Shipping Rate', '9000.0000', 3),
+(15, 4, 'total', 'Total', '293000.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -3021,7 +3041,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (71, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/330ml.png', 0, 1, '45000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:29:05', '2019-12-19 09:29:05'),
 (72, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/450ml.png', 0, 1, '110000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:31:22', '2019-12-19 09:31:22'),
 (73, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/600ml.png', 0, 1, '71500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:32:39', '2019-12-19 09:32:39'),
-(74, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/1000mL.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 09:34:26', '2019-12-19 09:34:26'),
+(74, 'Air', '', '', '', '', '', '', '', 97, 6, 'catalog/Mineral/1000mL.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 09:34:26', '2019-12-19 09:34:26'),
 (75, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/500 ml.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 07:40:19', '2019-12-23 07:40:19'),
 (76, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Sprite/pet 250 ml.jpg', 0, 1, '42000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-23 07:45:47', '2019-12-23 07:45:47'),
 (77, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Sprite/pet 390 ml.jpg', 0, 1, '44000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 07:47:17', '2019-12-23 07:47:17'),
@@ -3033,7 +3053,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (83, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Coca-Cola/390 ml.jpg', 0, 1, '44000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:19:01', '2019-12-23 08:19:01'),
 (84, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Coca-Cola/coca cola1 liter.jpg', 0, 1, '105000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:19:52', '2019-12-23 08:19:52'),
 (85, 'Air', '', '', '', '', '', '', '', 94, 6, 'catalog/Coca-Cola/coca cola 1.5 liter.jpg', 0, 1, '144000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:20:40', '2019-12-23 08:20:40'),
-(86, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/1500ml.png', 0, 1, '70000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:26:13', '2019-12-23 08:26:13'),
+(86, 'Air', '', '', '', '', '', '', '', 98, 6, 'catalog/Mineral/1500ml.png', 0, 1, '70000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:26:13', '2019-12-23 08:26:13'),
 (87, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-330-1.png', 0, 1, '56000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:39:17', '2019-12-23 08:39:17'),
 (88, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-450-1.png', 0, 1, '40000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:41:38', '2019-12-23 08:44:05'),
 (89, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-450-1.png', 0, 1, '108000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:43:52', '2019-12-23 08:43:52'),
@@ -3050,7 +3070,14 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (100, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Nestle Pure Life/1_5L.jpg', 0, 1, '58300.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:03:02', '2019-12-24 12:03:02'),
 (101, 'Air', '', '', '', '', '', '', '', 98, 6, 'catalog/RootBeer/330 ml..jpg', 0, 1, '115000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-24 12:20:42', '2019-12-24 12:20:42'),
 (102, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/RootBeer/250 ml.jpg', 8, 1, '156000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:22:26', '2019-12-24 12:22:26'),
-(103, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Polaris/kaleng 330 ml..jpg', 0, 1, '42000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:25:06', '2019-12-24 12:25:06');
+(103, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Polaris/kaleng 330 ml..jpg', 0, 1, '42000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:25:06', '2019-12-24 12:25:06'),
+(104, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Ichitan/1 dus ichitan thai milk tea 310 ml isi 24 pcs harga 152.000.jpg', 0, 1, '152000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:07:41', '2019-12-26 03:07:41'),
+(105, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Frestea/350ml isi 12 harga Rp 45.000,00.jpg', 0, 1, '45000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:09:57', '2019-12-26 03:09:57'),
+(106, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Frestea/isi 12 FRESTEA-ORIGINAL-PET-500 harga Rp 60.500,00.jpg', 0, 1, '60500.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:11:33', '2019-12-26 03:11:33'),
+(107, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Liang Teh/Liang Teh Cap Panda Kaleng 310ml (1 dus isi 24 kaleng) dengan harga Rp92.000.jpg', 0, 1, '92000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:13:41', '2019-12-26 03:13:41'),
+(108, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Teh Javana/teh javana.jpg', 0, 1, '25900.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:21:41', '2019-12-26 03:21:41'),
+(109, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Ichi Ocha/Ichi_Ocha_Teh_Melati_Botol___350ml_isi_12pcs_1_Dus harga Rp 23.700,00.jpg', 0, 1, '23700.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:25:43', '2019-12-26 03:25:43'),
+(110, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Nu Green Tea/111000 330ml isi 24.png', 0, 1, '111000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:29:46', '2019-12-26 03:29:46');
 
 -- --------------------------------------------------------
 
@@ -3142,7 +3169,14 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (101, 1, 'RootBeer Kaleng 330mL (24 pcs) Dus / Karton', '&lt;p&gt;Minuman ini aromanya berasal dari perisa root beer&amp;nbsp;sassafras\r\nalbidum (sassafras)&amp;nbsp;atau tanaman merambat bernama&amp;nbsp;Smilax\r\nornata (sarsaparilla)&amp;nbsp;sebagai rasa utama. Simpelnya... rasa dari\r\nminuman ini tuh sepintas aromanya mirip aroma minyak angin caplang.\r\nYang pernah tau bau aroma minyak angin kayak gambar dibawah ini, yah\r\nsama, aroma minuman Root Beer juga seperti itu. Bedanya ini kayak\r\nlagi minum pepsi tapi ada aroma minyak anginnya kalo aku bilang.\r\nAroma inilah yang merupakan bahan utama dari minuman Root Beer ini,\r\nkarna dibuat dari tanaman itulah makanya wangi aromanya seperti itu&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 1.27cm; margin-bottom: 0.28cm; line-height: 108%&quot;&gt;&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;', '', 'RootBeer Kaleng', '', '');
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (102, 1, 'RootBeer Gelas 250mL (24 pcs) Dus / Karton', '&lt;p&gt;Minuman ini aromanya berasal dari perisa root beer&amp;nbsp;sassafras\r\nalbidum (sassafras)&amp;nbsp;atau tanaman merambat bernama&amp;nbsp;Smilax\r\nornata (sarsaparilla)&amp;nbsp;sebagai rasa utama. Simpelnya... rasa dari\r\nminuman ini tuh sepintas aromanya mirip aroma minyak angin caplang.\r\nYang pernah tau bau aroma minyak angin kayak gambar dibawah ini, yah\r\nsama, aroma minuman Root Beer juga seperti itu. Bedanya ini kayak\r\nlagi minum pepsi tapi ada aroma minyak anginnya kalo aku bilang.\r\nAroma inilah yang merupakan bahan utama dari minuman Root Beer ini,\r\nkarna dibuat dari tanaman itulah makanya wangi aromanya seperti itu&lt;br&gt;&lt;/p&gt;', '', 'RootBeer Gelas', '', ''),
-(103, 1, 'Polaris Kaleng 330mL (6 pcs) Dus / Karton', '&lt;p&gt;air, CO2, sukrosa, perisa identik alami kopi ( mengandung pewarna\r\nalami karamel IV ), perisi artifisial krim, natrium klorida, pengawet\r\nnatrium benzoat, pengatur kemasan ( asam sitrat monohidrat, natrium\r\nsitrat ), kafein, xantham gun&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 1.27cm; margin-bottom: 0.28cm; line-height: 108%&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;', '', 'Polaris Kaleng', '', '');
+(103, 1, 'Polaris Kaleng 330mL (6 pcs) Dus / Karton', '&lt;p&gt;air, CO2, sukrosa, perisa identik alami kopi ( mengandung pewarna\r\nalami karamel IV ), perisi artifisial krim, natrium klorida, pengawet\r\nnatrium benzoat, pengatur kemasan ( asam sitrat monohidrat, natrium\r\nsitrat ), kafein, xantham gun&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 1.27cm; margin-bottom: 0.28cm; line-height: 108%&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;', '', 'Polaris Kaleng', '', ''),
+(104, 1, 'Ichitan Thai Milk Tea Botol 310mL (24 pcs) Dus / Karton', '&lt;p&gt;Perpaduan tepat teh pilihan dan susu segar yang diracik khas Thailand, Teh Khas Thailand, Menggunakan susu skim, sehingga lebih sehat karena rendah lemak dan kalori&lt;br&gt;&lt;/p&gt;', '', 'Ichitan Thai Milk Tea Botol', '', ''),
+(105, 1, 'Frestea Madu Botol 350mL (12 pcs) Dus / Karton', '&lt;p&gt;Frestea diproduksi di bawah otoritas Pacific Refreshments Pte. Ltd \r\ndengan menggunakan standar kualitas tinggi The&amp;nbsp;Coca-ColaCompany, \r\nmenggunakan teknologi tinggi dan didukung oleh proses produksi yang \r\nbaik, demi memastikan bahwa setiap botol Frestea memilki kualitas yang \r\nsama. &lt;br&gt;&lt;br&gt;&lt;/p&gt;', '', 'Frestea Madu Botol', '', ''),
+(106, 1, 'Frestea Original Botol 500mL (12 pcs) Dus / Karton', '&lt;p&gt;Frestea diproduksi di bawah otoritas Pacific Refreshments Pte. Ltd \r\ndengan menggunakan standar kualitas tinggi The&amp;nbsp;Coca-ColaCompany, \r\nmenggunakan teknologi tinggi dan didukung oleh proses produksi yang \r\nbaik, demi memastikan bahwa setiap botol Frestea memilki kualitas yang \r\nsama. &lt;br&gt;&lt;br&gt;&lt;/p&gt;', '', 'Frestea Original Botol', '', ''),
+(107, 1, 'Liang Teh Cap Panda Kaleng 310mL (24) Dus / Karton', '&lt;p&gt;&lt;span&gt;Cap Panda Liang Teh Can 310ml merupakan minuman pelepas dahaga dengan kandungan bahan-bahan herbal asli dari alam yang bermanfaat untuk mengembalikan kesegaran tubuh anda. Minuman ini berkhasiat dan menyehatkan tubuh anda. Cocok untuk menemani anda beraktivitas di hari yang padat, saat anda sedang bekerja maupun sedang santai. Dikemas dalam kaleng dan praktis untuk diminum kapanpun BPOM: TR 092602831 Shelf Life: 12 months&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Liang Teh Cap Panda Kaleng', '', ''),
+(108, 1, 'Teh Javana Melati Botol 350mL (12 pcs) Plastik Package ', '&lt;p&gt;&lt;span&gt;JAVANA Teh Melati PET 350ml Teh adalah salah satu minuman favorit masyarakat Indonesia yang sering dikonsumsi saat pagi atau sore hari, baik sebagai jamuan makanan atau hanya sekedar menjadi teman kudapan di Indonesia. Banyak manfaat yang dapat diperoleh jika Anda rajin mengonsumsi teh setiap hari. Manfaat teh diantaranya adalah dapat melarutkan lemak, menurunkan berat badan, melindungi tulang, mencegah kanker, meningkatkan mood, dan masih banyak lagi. Hal utama yang membuat orang tertarik pada teh biasanya terletak pada aroma teh tersebut yang menenangkan. Sensasi terbaik ketika meminum teh adalah ketika Anda dapat menghirup aroma pertama kali teh itu diseduh. Teh Javana menciptakan sensasi tersebut dengan mengolah daun teh menggunakan teknologi Aroma Recovery System. Salah satu produk yang diciptakannya adalah Javana Teh Melati Pet 350Ml. Javana Teh Melati Pet 350Ml memiliki aroma teh melati yang pekat dan menenangkan. Dikemas dalam botol yang didesain sederhana dapat memudahkan Anda untuk mengonsumsinya kapan saja dan di mana saja. Ketika membuka botol teh Javana Teh Melati Pet, aroma teh ketika pertama kali diseduh langsung terasa. Javana Teh Melati Pet dikenal sebagai minuman teh para raja karena hanya 10% dari semua pucuk daun teh dengan kualitas terbaik dipetik dan dipersembahkan untuk para raja. Sekarang, teh kualitas terbaik itu dapat kamu nikmati dalam kemasan Javana Teh Melati Pet dengan aroma melati yang lembut dan menyegarkan. Javana Teh Melati Pet dapat asyik dikonsumsi dalam kondisi dingin atau hangat.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Teh Javana Melati Botol', '', ''),
+(109, 1, 'Ichi Ocha Teh Melati Botol 350mL (12 pcs) Dus / Karton', '&lt;p&gt;&lt;span&gt;Ichi Ocha Teh Melati merupakan minuman produk teh hijau di Indonesia yang siap minum dan terbuat dari daun teh hijau Jepang Ichiban-cha dengan perpaduan madu yang memiliki kandungan polyphenol dan antioksidan yang tinggi dan memberikan manfaat teh hijau yang maksimal. Ichi Ocha membantu memberikan kesegaran dan kenikmatan cita rasa teh hijau nomor 1 yang dapat dipercaya.\r\n&lt;/span&gt;&lt;br&gt;&lt;/p&gt;', '', 'Ichi Ocha Teh Melati Botol', '', ''),
+(110, 1, 'Nu Green Tea Teh Tarik Botol 330mL (24 pcs) Dus / Karton', '&lt;p&gt;Nu Green NU Teh Tarik Minuman Instan [330 mL] &lt;br&gt;Nu kembali \r\nmenghadirkan minuman teh yang rasanya begitu unik dan segar. Nu \r\nmenggabungkan teh pilihannya dengan susu segar sehingga menghasilkan \r\nminuman teh tarik yang rasanya berbeda dengan teh tarik lainnya. Diolah \r\nsedemikian rupa dengan kualitas terbaik. Untuk memudahkan para pecinta \r\nteh tarik menikmati minuman kesukaanya, teh ini dikemas praktis dalam \r\nbotol pet yang sangat cocok dikonsumsi dimana saja dan kapan saja. Cocok\r\n dinimkati saat santai bersama teman, sahabat, dan kerabat. Lebih nikmat\r\n diminum saat keadaan dingin. Rasakan nikmatnya teh tarik persembahan NU\r\n dalam NU Teh Tarik Pet 330ml.&lt;br&gt;&lt;/p&gt;', '', 'Nu Green Tea Teh Tarik Botol', '', '');
 
 -- --------------------------------------------------------
 
@@ -3352,7 +3386,14 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (100, 33),
 (101, 24),
 (102, 24),
-(103, 24);
+(103, 24),
+(104, 17),
+(105, 17),
+(106, 17),
+(107, 17),
+(108, 17),
+(109, 17),
+(110, 17);
 
 -- --------------------------------------------------------
 
@@ -3435,7 +3476,14 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (100, 0, 0),
 (101, 0, 0),
 (102, 0, 0),
-(103, 0, 0);
+(103, 0, 0),
+(104, 0, 0),
+(105, 0, 0),
+(106, 0, 0),
+(107, 0, 0),
+(108, 0, 0),
+(109, 0, 0),
+(110, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3506,7 +3554,14 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (100, 0),
 (101, 0),
 (102, 0),
-(103, 0);
+(103, 0),
+(104, 0),
+(105, 0),
+(106, 0),
+(107, 0),
+(108, 0),
+(109, 0),
+(110, 0);
 
 -- --------------------------------------------------------
 
@@ -3743,15 +3798,17 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('4524fef28ceb320f9df8e62cfe', '{\"api_id\":\"1\"}', '2019-12-24 04:53:17'),
 ('4bfbf4070328549096dfadffae', '{\"api_id\":\"1\"}', '2019-12-24 04:53:23'),
 ('5f20b81d4a7d675f8c3185c9de', '{\"api_id\":\"1\"}', '2019-12-24 06:13:22'),
+('6123ed8517fba81874ce75999e', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"b57tbbjvJRhEh444b2nWndywsOHYyn89\"}', '2019-12-25 20:53:51'),
 ('6774a10721cf02d0979af1ba87', '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"BRPtigO53dsxVLFBMoRZkSB3q3BhVxrQ\"}', '2019-12-19 03:01:24'),
 ('71955c8175c96acf5ff8c9628e', '{\"api_id\":\"1\"}', '2019-12-24 06:41:44'),
 ('7e17d1fd0eb050a932c7a9a7ef', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer\":{\"customer_id\":\"\",\"customer_group_id\":\"1\",\"firstname\":\"Muhammad\",\"lastname\":\"Wijaya\",\"email\":\"oskop17@gmail.com\",\"telephone\":\"089765432345\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Muhammad\",\"lastname\":\"Wijaya\",\"company\":\"\",\"address_1\":\"Mujaher 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Muhammad \",\"lastname\":\"Wijaya\",\"company\":\"\",\"address_1\":\"Mujaher 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"}}', '2019-12-24 06:13:02'),
 ('8ffee49aabe041840724c51f22', '{\"api_id\":\"1\"}', '2019-12-19 03:40:20'),
 ('c5132e5333d716591fcd2fd4c5', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer\":{\"customer_id\":\"\",\"customer_group_id\":\"1\",\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"email\":\"tripuji.indriyani@gmail.com\",\"telephone\":\"082324196773\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"company\":\"\",\"address_1\":\"tegal\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"company\":\"\",\"address_1\":\"adiwerna\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"},\"payment_method\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"}}', '2019-12-24 06:06:45'),
+('d3a474ba062eda684e30d2d437', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"xQO41Z33YMLDtMi8mPkuo9jxACSiOGGi\",\"customer_id\":\"2\",\"payment_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null}}', '2019-12-26 03:18:49'),
 ('d7e7a249af852feca5a5412f9f', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\"}', '2019-12-24 06:41:39'),
 ('dfc44bbe6a0a4aec6957dd1bfd', '{\"api_id\":\"1\"}', '2019-12-24 06:02:08'),
 ('e068ac100694d138d98a928201', '{\"api_id\":\"1\"}', '2019-12-24 04:54:24'),
-('f1ae9ea9a75348981af6e8eb82', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"V8mIASUGvxjb2FtX4euCvEVrKRQf8PNv\",\"install\":\"xIFiQXWgiZ\",\"shipping_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"email\":\"ilham@gmail.com\",\"telephone\":\"088387236831\",\"custom_field\":[],\"shipping_address\":\"1\"},\"payment_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"country_id\":\"100\",\"zone_id\":\"1516\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\"},\"shipping_methods\":{\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"},\"comment\":\"DIantar di depan rumah, jangan lupa bunyikan bel.\",\"payment_methods\":{\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"order_id\":1}', '2019-12-24 06:41:44');
+('f1ae9ea9a75348981af6e8eb82', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"I4SAQnqNmZrwEW9N0qB3E3GKJulFnoCV\",\"install\":\"xIFiQXWgiZ\",\"shipping_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"email\":\"ilham@gmail.com\",\"telephone\":\"088387236831\",\"custom_field\":[],\"shipping_address\":\"1\"},\"payment_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"country_id\":\"100\",\"zone_id\":\"1516\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\"},\"shipping_methods\":{\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"},\"comment\":\"DIantar di depan rumah, jangan lupa bunyikan bel.\",\"payment_methods\":{\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"order_id\":1}', '2019-12-24 07:39:03');
 
 -- --------------------------------------------------------
 
@@ -4074,7 +4131,7 @@ CREATE TABLE `oc_statistics` (
 --
 
 INSERT INTO `oc_statistics` (`statistics_id`, `code`, `value`) VALUES
-(1, 'order_sale', '708500.0000'),
+(1, 'order_sale', '1001500.0000'),
 (2, 'order_processing', '0.0000'),
 (3, 'order_complete', '0.0000'),
 (4, 'order_other', '0.0000'),
@@ -9530,7 +9587,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `oc_api`
@@ -9572,13 +9629,13 @@ ALTER TABLE `oc_banner`
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
 
 --
 -- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `oc_category`
@@ -9620,7 +9677,7 @@ ALTER TABLE `oc_currency`
 -- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `oc_customer_activity`
@@ -9650,7 +9707,7 @@ ALTER TABLE `oc_customer_history`
 -- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `oc_customer_login`
@@ -9740,7 +9797,7 @@ ALTER TABLE `oc_geo_zone`
 -- AUTO_INCREMENT for table `oc_googleshopping_product`
 --
 ALTER TABLE `oc_googleshopping_product`
-  MODIFY `product_advertise_google_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `product_advertise_google_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `oc_information`
@@ -9824,13 +9881,13 @@ ALTER TABLE `oc_option_value`
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `oc_order_option`
@@ -9842,7 +9899,7 @@ ALTER TABLE `oc_order_option`
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
@@ -9872,7 +9929,7 @@ ALTER TABLE `oc_order_status`
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
@@ -9884,7 +9941,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
