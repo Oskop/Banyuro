@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2019 at 04:06 AM
+-- Generation Time: Jan 08, 2020 at 06:02 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -112,15 +112,8 @@ CREATE TABLE `oc_api_session` (
 --
 
 INSERT INTO `oc_api_session` (`api_session_id`, `api_id`, `session_id`, `ip`, `date_added`, `date_modified`) VALUES
-(11, 1, '256da881e50ade4cf9fc5366f3', '::1', '2019-12-24 13:17:21', '2019-12-24 13:17:21'),
-(10, 1, '5f20b81d4a7d675f8c3185c9de', '::1', '2019-12-24 12:49:22', '2019-12-24 12:49:22'),
-(9, 1, '7e17d1fd0eb050a932c7a9a7ef', '::1', '2019-12-24 12:43:17', '2019-12-24 12:49:02'),
-(8, 1, '418d0c668ac375ac951b7065e6', '::1', '2019-12-24 12:42:57', '2019-12-24 12:42:57'),
-(6, 1, 'dfc44bbe6a0a4aec6957dd1bfd', '::1', '2019-12-24 12:38:08', '2019-12-24 12:38:08'),
-(7, 1, 'c5132e5333d716591fcd2fd4c5', '::1', '2019-12-24 12:38:13', '2019-12-24 12:42:45'),
-(12, 1, '398786ebc9b326fc741334f9fd', '::1', '2019-12-24 13:17:37', '2019-12-24 13:17:37'),
-(13, 1, 'd7e7a249af852feca5a5412f9f', '::1', '2019-12-24 13:17:39', '2019-12-24 13:17:39'),
-(14, 1, '71955c8175c96acf5ff8c9628e', '::1', '2019-12-24 13:17:44', '2019-12-24 13:17:44');
+(21, 1, '30148f03fe6afa06632cfaef71', '::1', '2020-01-07 09:59:39', '2020-01-07 09:59:54'),
+(20, 1, 'a815bcf48479d65b524c7d640c', '::1', '2020-01-07 09:56:23', '2020-01-07 09:56:23');
 
 -- --------------------------------------------------------
 
@@ -265,8 +258,7 @@ CREATE TABLE `oc_banner_image` (
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
-(123, 7, 1, 'Teh Gelas', '', 'catalog/teh gelas.jpg', 0),
-(124, 7, 1, 'Sprite', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/250 ml.jpg', 0),
+(126, 7, 1, 'Sprite', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/250 ml.jpg', 0),
 (101, 6, 1, 'Aqua', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/Mineral/cups-220ml.png', 0),
 (122, 8, 1, 'Frestea', '', 'catalog/Frestea/Frestea-logo-2163EFBFC7-seeklogo.com.png', 0),
 (120, 8, 1, 'Fanta', '', 'catalog/Fanta/1200px-FantaLogo.svg.png', 0),
@@ -274,7 +266,9 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 (118, 8, 1, 'Le Minerale', '', 'catalog/Le Minerale/Logo_Le_Minerale.png', 0),
 (119, 8, 1, 'Sprite', '', 'catalog/Sprite/Sprite_logo.jpg', 0),
 (117, 8, 1, 'Coca Cola', '', 'catalog/demo/manufacturer/cocacola.png', 0),
-(116, 8, 1, 'Nu Green Tea', '', 'catalog/Nu Green Tea/nu-green-tea-logo-19EFC68E27-seeklogo.com.png', 0);
+(125, 7, 1, 'Teh Gelas', '', 'catalog/teh gelas.jpg', 0),
+(116, 8, 1, 'Nu Green Tea', '', 'catalog/Nu Green Tea/nu-green-tea-logo-19EFC68E27-seeklogo.com.png', 0),
+(127, 7, 1, 'Aqua', '', 'catalog/Mineral/cups-220ml.png', 0);
 
 -- --------------------------------------------------------
 
@@ -797,7 +791,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 (1, 'Pound Sterling', 'GBP', '£', '', '2', 0.61250001, 1, '2014-09-25 14:40:00'),
 (2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2019-12-19 02:37:24'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.78460002, 1, '2014-09-25 14:40:00'),
-(4, 'Rupiah', 'IND', 'Rp', '', '', 1.00000000, 1, '2019-12-26 02:39:32');
+(4, 'Rupiah', 'IND', 'Rp', '', '', 1.00000000, 1, '2020-01-08 04:40:50');
 
 -- --------------------------------------------------------
 
@@ -2749,7 +2743,9 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (1, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'Ilham', 'Muzani', 'ilham@gmail.com', '088387236831', '', '[]', 'Ilham', 'Muzani', 'None', 'Jalan Jalan', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Ilham', 'Muzani', 'None', 'Jalan Jalan', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Flat Shipping Rate', 'flat.flat', 'DIantar di depan rumah, jangan lupa bunyikan bel.', '338000.0000', 2, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 11:28:00', '2019-12-24 11:30:13'),
 (2, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'indri', 'tri puji', 'tripuji.indriyani@gmail.com', '082324196773', '', '[]', 'indri', 'tri puji', '', 'tegal', '', 'Tegal', '', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BCA', 'bank_bca', 'indri', 'tri puji', '', 'adiwerna', '', 'Tegal', '', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', '', '108500.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 12:42:45', '2019-12-24 12:42:45'),
 (3, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 0, 1, 'Muhammad', 'Wijaya', 'oskop17@gmail.com', '089765432345', '', '[]', 'Muhammad', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Muhammad ', 'Wijaya', '', 'Mujaher 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Grab Shipping Rate', 'hp_grab.hp_grab', '', '938000.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-24 12:49:02', '2019-12-24 12:49:02'),
-(4, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 2, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', '', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BRI Syariah', 'bank_bri_syariah', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', 'Nanti Saya Jemput', '293000.0000', 2, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-26 09:54:31', '2019-12-26 09:54:49');
+(4, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 2, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', '[]', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BRI Syariah', 'bank_bri_syariah', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', 'Nanti Saya Jemput', '293000.0000', 5, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-26 09:54:31', '2019-12-26 10:32:57'),
+(5, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 2, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', '[]', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BNI', 'bank_bni', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', '', '54000.0000', 5, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2019-12-26 10:36:30', '2019-12-26 10:38:36'),
+(6, 0, 'INV-2019-00', 0, 'Banyuro', 'http://localhost/opencart/upload/', 2, 1, 'Saya', 'Kelompok 1', 'oskop17@gmail.com', '082265555272', '', '', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Transfer to Bank BRI Syariah', 'bank_bri_syariah', 'Saya', 'Kelompok 1', '', 'Gangnam 12', '', 'Tegal', '52111', 'Indonesia', 100, 'Jawa Tengah', 1516, '', '[]', 'Gojek Shipping Rate', 'hp_gojek.hp_gojek', '', '376500.0000', 1, 0, '0.0000', 0, '', 1, 4, 'IND', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0', 'en-US,en;q=0.5', '2020-01-02 08:11:52', '2020-01-02 08:12:26');
 
 -- --------------------------------------------------------
 
@@ -2777,7 +2773,13 @@ INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id
 (4, 1, 2, 0, '', '2019-12-24 11:30:13'),
 (5, 2, 1, 0, '', '2019-12-24 12:42:45'),
 (6, 3, 1, 0, '', '2019-12-24 12:49:02'),
-(7, 4, 2, 1, 'Please transfer to the Bank Account Number\n\nilham 089765432345\n\nOrder will be sent after we receive payment from you.', '2019-12-26 09:54:49');
+(7, 4, 2, 1, 'Please transfer to the Bank Account Number\n\nilham 089765432345\n\nOrder will be sent after we receive payment from you.', '2019-12-26 09:54:49'),
+(8, 4, 0, 0, '', '2019-12-26 10:32:54'),
+(9, 4, 5, 0, '', '2019-12-26 10:32:57'),
+(10, 5, 7, 1, 'Please transfer to the Bank Account Number\n\nTransfer ke Rek. BNI 062383719\n\nOrder will be sent after we receive payment from you.', '2019-12-26 10:36:36'),
+(11, 5, 0, 0, '', '2019-12-26 10:38:34'),
+(12, 5, 5, 0, '', '2019-12-26 10:38:36'),
+(13, 6, 1, 1, 'Please transfer to the Bank Account Number\n\nilham 089765432345\n\nOrder will be sent after we receive payment from you.', '2020-01-02 08:12:26');
 
 -- --------------------------------------------------------
 
@@ -2825,8 +2827,14 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `n
 (4, 3, 101, 'RootBeer Kaleng 330mL (24 pcs) Dus / Karton', 'Air', 2, '115000.0000', '230000.0000', '0.0000', 0),
 (5, 3, 64, 'Fanta Botol / Pet 250mL (12 pcs) Dus / Karton', 'Air', 3, '42000.0000', '126000.0000', '0.0000', 0),
 (6, 3, 85, 'Coca-Cola Botol / Pet 1,5L (12 pcs) Dus / Karton', 'Air', 4, '144000.0000', '576000.0000', '0.0000', 0),
-(7, 4, 74, 'Aqua Botol 1L (12 pcs) Dus / Karton', 'Air', 3, '48000.0000', '144000.0000', '0.0000', 0),
-(8, 4, 86, 'Aqua Botol 1,5L (12 pcs) Dus / Karton', 'Air', 2, '70000.0000', '140000.0000', '0.0000', 0);
+(10, 4, 86, 'Aqua Botol 1,5L (12 pcs) Dus / Karton', 'Air', 2, '70000.0000', '140000.0000', '0.0000', 0),
+(9, 4, 74, 'Aqua Botol 1L (12 pcs) Dus / Karton', 'Air', 3, '48000.0000', '144000.0000', '0.0000', 0),
+(12, 5, 105, 'Frestea Madu Botol 350mL (12 pcs) Dus / Karton', 'Air', 1, '45000.0000', '45000.0000', '0.0000', 0),
+(13, 6, 105, 'Frestea Madu Botol 350mL (12 pcs) Dus / Karton', 'Air', 1, '45000.0000', '45000.0000', '0.0000', 0),
+(14, 6, 106, 'Frestea Original Botol 500mL (12 pcs) Dus / Karton', 'Air', 1, '60500.0000', '60500.0000', '0.0000', 0),
+(15, 6, 85, 'Coca-Cola Botol / Pet 1,5L (12 pcs) Dus / Karton', 'Air', 1, '144000.0000', '144000.0000', '0.0000', 0),
+(16, 6, 74, 'Aqua Botol 1L (12 pcs) Dus / Karton', 'Air', 1, '48000.0000', '48000.0000', '0.0000', 0),
+(17, 6, 86, 'Aqua Botol 1,5L (12 pcs) Dus / Karton', 'Air', 1, '70000.0000', '70000.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2947,9 +2955,15 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (10, 3, 'sub_total', 'Sub-Total', '932000.0000', 1),
 (11, 3, 'shipping', 'Grab Shipping Rate', '6000.0000', 3),
 (12, 3, 'total', 'Total', '938000.0000', 9),
-(13, 4, 'sub_total', 'Sub-Total', '284000.0000', 1),
-(14, 4, 'shipping', 'Gojek Shipping Rate', '9000.0000', 3),
-(15, 4, 'total', 'Total', '293000.0000', 9);
+(17, 4, 'shipping', 'Gojek Shipping Rate', '9000.0000', 3),
+(16, 4, 'sub_total', 'Sub-Total', '284000.0000', 1),
+(18, 4, 'total', 'Total', '293000.0000', 9),
+(23, 5, 'shipping', 'Gojek Shipping Rate', '9000.0000', 3),
+(22, 5, 'sub_total', 'Sub-Total', '45000.0000', 1),
+(24, 5, 'total', 'Total', '54000.0000', 9),
+(25, 6, 'sub_total', 'Sub-Total', '367500.0000', 1),
+(26, 6, 'shipping', 'Gojek Shipping Rate', '9000.0000', 3),
+(27, 6, 'total', 'Total', '376500.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -3027,13 +3041,13 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (56, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/350 ml.jpg', 0, 0, '35900.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:48:57', '2019-12-19 08:48:57'),
 (57, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/250ml.jpg', 0, 0, '25000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:50:38', '2019-12-19 08:51:09'),
 (58, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/botol 250 ml.jpg', 0, 1, '20900.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:53:32', '2019-12-19 08:53:32'),
-(59, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/teh gelas.jpg', 0, 1, '18500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:54:53', '2019-12-19 08:54:53'),
+(59, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/teh gelas.jpg', 0, 1, '18500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 08:54:53', '2019-12-19 08:54:53'),
 (60, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/200 ml.jpg', 0, 0, '80000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:57:55', '2019-12-19 08:57:55'),
 (61, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/500ml.jpg', 0, 0, '72000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:59:46', '2019-12-19 08:59:46'),
 (62, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/330.jpg', 0, 1, '111000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:03:26', '2019-12-19 09:03:26'),
 (63, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/kaleng 250 ml.jpg', 0, 1, '115000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:07:32', '2019-12-19 09:07:32'),
 (50, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Nu Green Tea/330 ml.jpg', 0, 0, '74000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2019-12-19 08:35:05', '2019-12-23 07:32:50'),
-(51, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/450 ml.jpg', 0, 1, '106500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:37:49', '2019-12-19 08:41:38'),
+(51, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/450 ml.jpg', 0, 1, '106500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 08:37:49', '2019-12-19 08:41:38'),
 (52, 'Air', '', '', '', '', '', '', '', 99, 6, 'catalog/1 liter.png', 0, 1, '99500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:40:17', '2019-12-19 08:41:12'),
 (53, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/botol 350ml.jpg', 0, 1, '40500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 08:43:04', '2019-12-19 08:43:04'),
 (69, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Sprite/330 ml.jpg', 0, 0, '150000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:21:47', '2019-12-19 09:35:05'),
@@ -3041,7 +3055,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (71, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/330ml.png', 0, 1, '45000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:29:05', '2019-12-19 09:29:05'),
 (72, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/450ml.png', 0, 1, '110000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:31:22', '2019-12-19 09:31:22'),
 (73, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/600ml.png', 0, 1, '71500.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-19 09:32:39', '2019-12-19 09:32:39'),
-(74, 'Air', '', '', '', '', '', '', '', 97, 6, 'catalog/Mineral/1000mL.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 09:34:26', '2019-12-19 09:34:26'),
+(74, 'Air', '', '', '', '', '', '', '', 96, 6, 'catalog/Mineral/1000mL.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-19 09:34:26', '2019-12-19 09:34:26'),
 (75, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/500 ml.jpg', 0, 1, '48000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 07:40:19', '2019-12-23 07:40:19'),
 (76, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Sprite/pet 250 ml.jpg', 0, 1, '42000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-23 07:45:47', '2019-12-23 07:45:47'),
 (77, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Sprite/pet 390 ml.jpg', 0, 1, '44000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 07:47:17', '2019-12-23 07:47:17'),
@@ -3052,8 +3066,8 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (82, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Coca-Cola/250 ml.jpg', 0, 1, '42000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:17:51', '2019-12-23 08:17:51'),
 (83, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Coca-Cola/390 ml.jpg', 0, 1, '44000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:19:01', '2019-12-23 08:19:01'),
 (84, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Coca-Cola/coca cola1 liter.jpg', 0, 1, '105000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:19:52', '2019-12-23 08:19:52'),
-(85, 'Air', '', '', '', '', '', '', '', 94, 6, 'catalog/Coca-Cola/coca cola 1.5 liter.jpg', 0, 1, '144000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:20:40', '2019-12-23 08:20:40'),
-(86, 'Air', '', '', '', '', '', '', '', 98, 6, 'catalog/Mineral/1500ml.png', 0, 1, '70000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:26:13', '2019-12-23 08:26:13'),
+(85, 'Air', '', '', '', '', '', '', '', 93, 6, 'catalog/Coca-Cola/coca cola 1.5 liter.jpg', 0, 1, '144000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-23 08:20:40', '2019-12-23 08:20:40'),
+(86, 'Air', '', '', '', '', '', '', '', 97, 6, 'catalog/Mineral/1500ml.png', 0, 1, '70000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:26:13', '2019-12-23 08:26:13'),
 (87, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-330-1.png', 0, 1, '56000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:39:17', '2019-12-23 08:39:17'),
 (88, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-450-1.png', 0, 1, '40000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:41:38', '2019-12-23 08:44:05'),
 (89, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Mineral/aquakids-450-1.png', 0, 1, '108000.0000', 0, 0, '2019-12-23', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-23 08:43:52', '2019-12-23 08:43:52'),
@@ -3072,11 +3086,11 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (102, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/RootBeer/250 ml.jpg', 8, 1, '156000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:22:26', '2019-12-24 12:22:26'),
 (103, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Polaris/kaleng 330 ml..jpg', 0, 1, '42000.0000', 0, 0, '2019-12-24', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-24 12:25:06', '2019-12-24 12:25:06'),
 (104, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Ichitan/1 dus ichitan thai milk tea 310 ml isi 24 pcs harga 152.000.jpg', 0, 1, '152000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:07:41', '2019-12-26 03:07:41'),
-(105, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Frestea/350ml isi 12 harga Rp 45.000,00.jpg', 0, 1, '45000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:09:57', '2019-12-26 03:09:57'),
-(106, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Frestea/isi 12 FRESTEA-ORIGINAL-PET-500 harga Rp 60.500,00.jpg', 0, 1, '60500.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:11:33', '2019-12-26 03:11:33'),
+(105, 'Air', '', '', '', '', '', '', '', 98, 6, 'catalog/Frestea/350ml isi 12 harga Rp 45.000,00.jpg', 0, 1, '45000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-26 03:09:57', '2019-12-26 03:09:57'),
+(106, 'Air', '', '', '', '', '', '', '', 99, 6, 'catalog/Frestea/isi 12 FRESTEA-ORIGINAL-PET-500 harga Rp 60.500,00.jpg', 0, 1, '60500.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:11:33', '2019-12-26 03:11:33'),
 (107, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Liang Teh/Liang Teh Cap Panda Kaleng 310ml (1 dus isi 24 kaleng) dengan harga Rp92.000.jpg', 0, 1, '92000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:13:41', '2019-12-26 03:13:41'),
 (108, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Teh Javana/teh javana.jpg', 0, 1, '25900.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:21:41', '2019-12-26 03:21:41'),
-(109, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Ichi Ocha/Ichi_Ocha_Teh_Melati_Botol___350ml_isi_12pcs_1_Dus harga Rp 23.700,00.jpg', 0, 1, '23700.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:25:43', '2019-12-26 03:25:43'),
+(109, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Ichi Ocha/Ichi_Ocha_Teh_Melati_Botol___350ml_isi_12pcs_1_Dus harga Rp 23.700,00.jpg', 0, 1, '23700.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2019-12-26 03:25:43', '2019-12-26 03:25:43'),
 (110, 'Air', '', '', '', '', '', '', '', 100, 6, 'catalog/Nu Green Tea/111000 330ml isi 24.png', 0, 1, '111000.0000', 0, 0, '2019-12-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2019-12-26 03:29:46', '2019-12-26 03:29:46');
 
 -- --------------------------------------------------------
@@ -3789,26 +3803,38 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('03cbca133bad41f7af66855b02', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"L8wZoyNgJAMPxkOkBekHow4ImDm9moSe\",\"install\":\"VX5rNYP1kK\"}', '2019-12-23 02:23:21'),
 ('0d7567bc5fac80976acb9ac59c', '{\"user_id\":\"1\",\"user_token\":\"NSIww2DUG56T68gmxQNItJi881tavTUD\",\"language\":\"en-gb\",\"currency\":\"USD\"}', '2019-12-19 01:06:08'),
 ('127de8ac704574fe8b662b25c7', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer\":{\"customer_id\":\"0\",\"customer_group_id\":\"1\",\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"email\":\"ilham@gmail.com\",\"telephone\":\"088387236831\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"shipping_method\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}}', '2019-12-24 04:54:21'),
+('1633b9723d04655a0fdf15b6f6', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"customer_id\":\"2\",\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"payment_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"user_id\":\"1\",\"user_token\":\"dwvSNUoB07vFIdE9aqDhmjiAeokK7D64\"}', '2020-01-02 07:57:07'),
 ('1fd5d98ce5b030c7164a884877', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"VfJiFtQLFidWaUmLrP1aauNhQowhJkAO\",\"customer_id\":\"1\",\"payment_address\":{\"address_id\":\"1\",\"firstname\":\"Os\",\"lastname\":\"Kop\",\"company\":\"\",\"address_1\":\"Jln. Mujaher\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"payment_methods\":[]}', '2019-12-19 03:42:48'),
 ('256da881e50ade4cf9fc5366f3', '{\"api_id\":\"1\"}', '2019-12-24 06:41:21'),
+('2d5e98f5911403fb8594f220b5', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"0fFZxAtmByoRuQsN05ZKMbMZItKJPRRE\",\"customer_id\":\"2\",\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null}}', '2020-01-08 05:07:58'),
+('30148f03fe6afa06632cfaef71', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer_id\":\"2\",\"customer\":{\"customer_id\":\"2\",\"customer_group_id\":\"1\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"email\":\"oskop17@gmail.com\",\"telephone\":\"082265555272\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}}}', '2020-01-07 03:23:54'),
 ('398786ebc9b326fc741334f9fd', '{\"api_id\":\"1\"}', '2019-12-24 06:41:37'),
 ('400a6e547e5c1ac7c61b01cbea', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"egKGZG6zCgOYK39gKreUc4fVcfCz6YFM\"}', '2019-12-19 04:00:39'),
 ('40bfc8aca1d2e2d5f1bef2ab05', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"3dXxWjfY014ZbrXnO3VjQe7cPDQ0lKvj\"}', '2019-12-19 03:26:16'),
 ('418d0c668ac375ac951b7065e6', '{\"api_id\":\"1\"}', '2019-12-24 06:06:57'),
 ('4524fef28ceb320f9df8e62cfe', '{\"api_id\":\"1\"}', '2019-12-24 04:53:17'),
 ('4bfbf4070328549096dfadffae', '{\"api_id\":\"1\"}', '2019-12-24 04:53:23'),
+('56f3905cdb079d0df15ffec023', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer_id\":\"2\",\"customer\":{\"customer_id\":\"2\",\"customer_group_id\":\"1\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"email\":\"oskop17@gmail.com\",\"telephone\":\"082265555272\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"shipping_method\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}}', '2019-12-26 04:02:36'),
+('56f5163cb5621ef32156df22d6', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"z3AfLFeBwGtkLbbYejbyLSk5qtOi1Tqg\",\"customer_id\":\"2\",\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"payment_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null}}', '2019-12-26 04:02:53'),
 ('5f20b81d4a7d675f8c3185c9de', '{\"api_id\":\"1\"}', '2019-12-24 06:13:22'),
+('609f8e467a137f518a5b641104', '{\"api_id\":\"1\"}', '2019-12-26 04:00:46'),
 ('6123ed8517fba81874ce75999e', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"b57tbbjvJRhEh444b2nWndywsOHYyn89\"}', '2019-12-25 20:53:51'),
 ('6774a10721cf02d0979af1ba87', '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"BRPtigO53dsxVLFBMoRZkSB3q3BhVxrQ\"}', '2019-12-19 03:01:24'),
 ('71955c8175c96acf5ff8c9628e', '{\"api_id\":\"1\"}', '2019-12-24 06:41:44'),
+('7ca88a2c6581b8ccae2bb41667', '{\"api_id\":\"1\"}', '2019-12-26 03:56:14'),
 ('7e17d1fd0eb050a932c7a9a7ef', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer\":{\"customer_id\":\"\",\"customer_group_id\":\"1\",\"firstname\":\"Muhammad\",\"lastname\":\"Wijaya\",\"email\":\"oskop17@gmail.com\",\"telephone\":\"089765432345\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Muhammad\",\"lastname\":\"Wijaya\",\"company\":\"\",\"address_1\":\"Mujaher 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Muhammad \",\"lastname\":\"Wijaya\",\"company\":\"\",\"address_1\":\"Mujaher 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"}}', '2019-12-24 06:13:02'),
 ('8ffee49aabe041840724c51f22', '{\"api_id\":\"1\"}', '2019-12-19 03:40:20'),
+('97f4433070b6e3c227d2393a31', '{\"api_id\":\"1\"}', '2019-12-26 03:57:02'),
+('a815bcf48479d65b524c7d640c', '{\"api_id\":\"1\"}', '2020-01-07 03:20:23'),
+('b7adc6e9b174408919b2b90a6b', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"yiR5dlPndlI1PoKkGmd9bgVcIAg5tkzV\"}', '2020-01-02 02:06:37'),
 ('c5132e5333d716591fcd2fd4c5', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer\":{\"customer_id\":\"\",\"customer_group_id\":\"1\",\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"email\":\"tripuji.indriyani@gmail.com\",\"telephone\":\"082324196773\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"company\":\"\",\"address_1\":\"tegal\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"indri\",\"lastname\":\"tri puji\",\"company\":\"\",\"address_1\":\"adiwerna\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"},\"payment_method\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"}}', '2019-12-24 06:06:45'),
-('d3a474ba062eda684e30d2d437', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"xQO41Z33YMLDtMi8mPkuo9jxACSiOGGi\",\"customer_id\":\"2\",\"payment_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null}}', '2019-12-26 03:18:49'),
+('c6ff4629c075513d016918ec87', '{\"user_id\":\"1\",\"user_token\":\"hRSxssV0kJaRTMuRB9PnQcvFIZIeeRX6\"}', '2020-01-07 03:23:39'),
+('d3a474ba062eda684e30d2d437', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"xQO41Z33YMLDtMi8mPkuo9jxACSiOGGi\",\"customer_id\":\"2\",\"payment_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null},\"shipping_address\":{\"address_id\":\"2\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":null}}', '2019-12-26 03:36:23'),
 ('d7e7a249af852feca5a5412f9f', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\"}', '2019-12-24 06:41:39'),
 ('dfc44bbe6a0a4aec6957dd1bfd', '{\"api_id\":\"1\"}', '2019-12-24 06:02:08'),
 ('e068ac100694d138d98a928201', '{\"api_id\":\"1\"}', '2019-12-24 04:54:24'),
-('f1ae9ea9a75348981af6e8eb82', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"I4SAQnqNmZrwEW9N0qB3E3GKJulFnoCV\",\"install\":\"xIFiQXWgiZ\",\"shipping_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"email\":\"ilham@gmail.com\",\"telephone\":\"088387236831\",\"custom_field\":[],\"shipping_address\":\"1\"},\"payment_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"country_id\":\"100\",\"zone_id\":\"1516\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\"},\"shipping_methods\":{\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"},\"comment\":\"DIantar di depan rumah, jangan lupa bunyikan bel.\",\"payment_methods\":{\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"order_id\":1}', '2019-12-24 07:39:03');
+('f1ae9ea9a75348981af6e8eb82', '{\"language\":\"en-gb\",\"currency\":\"IND\",\"user_id\":\"1\",\"user_token\":\"I4SAQnqNmZrwEW9N0qB3E3GKJulFnoCV\",\"install\":\"xIFiQXWgiZ\",\"shipping_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"email\":\"ilham@gmail.com\",\"telephone\":\"088387236831\",\"custom_field\":[],\"shipping_address\":\"1\"},\"payment_address\":{\"firstname\":\"Ilham\",\"lastname\":\"Muzani\",\"company\":\"None\",\"address_1\":\"Jalan Jalan\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"country_id\":\"100\",\"zone_id\":\"1516\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\"},\"shipping_methods\":{\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"shipping_method\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"},\"comment\":\"DIantar di depan rumah, jangan lupa bunyikan bel.\",\"payment_methods\":{\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"payment_method\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"order_id\":1}', '2019-12-24 07:39:03'),
+('f60b176b70d43d22416689a07e', '{\"api_id\":\"1\",\"language\":\"en-gb\",\"currency\":\"IND\",\"customer_id\":\"2\",\"customer\":{\"customer_id\":\"2\",\"customer_group_id\":\"1\",\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"email\":\"oskop17@gmail.com\",\"telephone\":\"082265555272\",\"custom_field\":[]},\"payment_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"payment_methods\":{\"bank_bca\":{\"code\":\"bank_bca\",\"image\":\"bank_bca\",\"title\":\"Transfer to Bank BCA\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bri_syariah\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_mandiri\":{\"code\":\"bank_mandiri\",\"image\":\"bank_mandiri\",\"title\":\"Transfer to Bank Mandiri\",\"terms\":\"\",\"sort_order\":\"\"},\"bank_bni\":{\"code\":\"bank_bni\",\"image\":\"bank_bni\",\"title\":\"Transfer to Bank BNI\",\"terms\":\"\",\"sort_order\":\"3\"},\"cod\":{\"code\":\"cod\",\"title\":\"Cash On Delivery\",\"terms\":\"\",\"sort_order\":\"5\"}},\"shipping_address\":{\"firstname\":\"Saya\",\"lastname\":\"Kelompok 1\",\"company\":\"\",\"address_1\":\"Gangnam 12\",\"address_2\":\"\",\"postcode\":\"52111\",\"city\":\"Tegal\",\"zone_id\":\"1516\",\"zone\":\"Jawa Tengah\",\"zone_code\":\"JT\",\"country_id\":\"100\",\"country\":\"Indonesia\",\"iso_code_2\":\"ID\",\"iso_code_3\":\"IDN\",\"address_format\":\"\",\"custom_field\":[]},\"shipping_methods\":{\"hp_gojek\":{\"title\":\"Gojek Shipping\",\"quote\":{\"hp_gojek\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}},\"sort_order\":null,\"error\":false},\"hp_grab\":{\"title\":\"Grab Shipping\",\"quote\":{\"hp_grab\":{\"code\":\"hp_grab.hp_grab\",\"title\":\"Grab Shipping Rate\",\"cost\":\"6000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_grab.png\",\"tax_class_id\":null,\"text\":\"Rp6,000\"}},\"sort_order\":null,\"error\":false},\"flat\":{\"title\":\"Flat Rate\",\"quote\":{\"flat\":{\"code\":\"flat.flat\",\"title\":\"Flat Shipping Rate\",\"cost\":\"50000.00\",\"tax_class_id\":\"9\",\"text\":\"Rp50,000\"}},\"sort_order\":\"1\",\"error\":false}},\"payment_method\":{\"code\":\"bank_bri_syariah\",\"image\":\"bank_bri_syariah\",\"title\":\"Transfer to Bank BRI Syariah\",\"terms\":\"\",\"sort_order\":\"\"},\"shipping_method\":{\"code\":\"hp_gojek.hp_gojek\",\"title\":\"Gojek Shipping Rate\",\"cost\":\"9000\",\"weight\":0,\"etd\":1,\"text_kg\":\"Kg\",\"text_day\":\"Day\",\"image\":\"catalog\\/view\\/theme\\/default\\/image\\/shipping\\/hp_gojek.png\",\"tax_class_id\":null,\"text\":\"Rp9,000\"}}', '2019-12-26 03:56:57');
 
 -- --------------------------------------------------------
 
@@ -3833,75 +3859,61 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (595, 0, 'theme_default', 'theme_default_image_location_height', '50', 0),
 (594, 0, 'theme_default', 'theme_default_image_location_width', '268', 0),
 (683, 0, 'theme_mintleaf', 'theme_mintleaf_status', '1', 0),
-(1061, 0, 'config', 'config_fax', '', 0),
-(1062, 0, 'config', 'config_image', 'catalog/Logo/BanyuroroKidulWetans.png', 0),
-(1063, 0, 'config', 'config_open', '', 0),
-(1064, 0, 'config', 'config_comment', '', 0),
-(1065, 0, 'config', 'config_country_id', '100', 0),
-(1066, 0, 'config', 'config_zone_id', '1516', 0),
-(1067, 0, 'config', 'config_language', 'en-gb', 0),
-(1068, 0, 'config', 'config_admin_language', 'en-gb', 0),
-(1069, 0, 'config', 'config_currency', 'IND', 0),
-(1070, 0, 'config', 'config_currency_auto', '1', 0),
-(1071, 0, 'config', 'config_length_class_id', '1', 0),
-(1072, 0, 'config', 'config_weight_class_id', '1', 0),
-(1073, 0, 'config', 'config_product_count', '1', 0),
-(1074, 0, 'config', 'config_limit_admin', '20', 0),
-(1075, 0, 'config', 'config_review_status', '1', 0),
-(1076, 0, 'config', 'config_review_guest', '1', 0),
-(1077, 0, 'config', 'config_voucher_min', '1', 0),
-(1078, 0, 'config', 'config_voucher_max', '1000', 0),
-(1079, 0, 'config', 'config_tax', '1', 0),
-(1080, 0, 'config', 'config_tax_default', 'shipping', 0),
-(1081, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(1082, 0, 'config', 'config_customer_online', '0', 0),
-(1083, 0, 'config', 'config_customer_activity', '0', 0),
-(1084, 0, 'config', 'config_customer_search', '0', 0),
-(1085, 0, 'config', 'config_customer_group_id', '1', 0),
-(1086, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
-(1087, 0, 'config', 'config_customer_price', '0', 0),
-(1088, 0, 'config', 'config_login_attempts', '5', 0),
+(1194, 0, 'config', 'config_image', 'catalog/Logo/BanyuroroKidulWetans.png', 0),
+(1267, 0, 'config', 'config_error_filename', 'error.log', 0),
+(1266, 0, 'config', 'config_error_log', '1', 0),
+(1265, 0, 'config', 'config_error_display', '1', 0),
+(1264, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
+(1263, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
+(1262, 0, 'config', 'config_file_max_size', '300000', 0),
 (682, 0, 'theme_mintleaf', 'theme_mintleaf_directory', 'mintleaf', 0),
-(1107, 0, 'config', 'config_return_id', '0', 0),
-(1108, 0, 'config', 'config_return_status_id', '2', 0),
-(1109, 0, 'config', 'config_captcha', '', 0),
-(1110, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
-(1111, 0, 'config', 'config_logo', 'catalog/Logo/BanyuroroKidulWetans.png', 0),
-(1112, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
-(1113, 0, 'config', 'config_mail_engine', 'mail', 0),
-(1114, 0, 'config', 'config_mail_parameter', '', 0),
-(1115, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(1116, 0, 'config', 'config_mail_smtp_username', '', 0),
-(1089, 0, 'config', 'config_account_id', '3', 0),
-(1090, 0, 'config', 'config_invoice_prefix', 'INV-2019-00', 0),
-(1091, 0, 'config', 'config_cart_weight', '1', 0),
-(1092, 0, 'config', 'config_checkout_guest', '1', 0),
-(1093, 0, 'config', 'config_checkout_id', '5', 0),
-(1094, 0, 'config', 'config_order_status_id', '1', 0),
-(1095, 0, 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', 1),
-(1096, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
-(1097, 0, 'config', 'config_fraud_status_id', '7', 0),
-(1098, 0, 'config', 'config_api_id', '1', 0),
-(1099, 0, 'config', 'config_stock_display', '0', 0),
-(1100, 0, 'config', 'config_stock_warning', '0', 0),
-(1101, 0, 'config', 'config_stock_checkout', '0', 0),
-(1102, 0, 'config', 'config_affiliate_group_id', '1', 0),
-(1103, 0, 'config', 'config_affiliate_approval', '0', 0),
-(1104, 0, 'config', 'config_affiliate_auto', '0', 0),
-(1105, 0, 'config', 'config_affiliate_commission', '5', 0),
-(1106, 0, 'config', 'config_affiliate_id', '4', 0),
+(1261, 0, 'config', 'config_encryption', 'Mg5vXDbhMgKjSbHXDqo50jzAdTZjE4IhV8aI58CR0VlBNPjVGvQcrTgd0CXMRaFhCUK2sfxdIpZEcM2ZJEBUmh37J0rYDb2XlUmoVdOgAL7s1AHm6IcmxpnAvW5d8mnekR5ApJYZzyU7cMOlL0CyxHMjH5NcNFPRaY9etHZYEckK5Sq0oKWCu6MGaMnv5lxJ3imwKp5ACCOpA464SRAy1MV2sSpmR8tpvTo136FaaGNis9VtIkLbkSNu0EWKWwdqCVjYPbnmNz1eMfSxbQokfkVZZJVQ8zWHLYD2XGoGCBI4Tp8rMRv4MglqnUGYus7GTlWhDoeWIQ6I01lCMUcdqumUp2oWmdQC6fCE9wdkEj0CzV5bkWBskjA0J3b0DHySKjXurRGfUj9iTs8kLP1uit7IMRA21v2dbM9f2qQ2jAXJgfKxbjTjBE96LJ9eIc7fBgovwHF94F0YHiFI7JxR5PIbwJBqStMMUCACw3ParzsulmDYVHJDAHw8Hs2U74ONI5FiC7GvDPb2PbzGYh4YYJgPXT1E1qXVOuZAyzp5uUeVPzvyLZP6Rd63gBVXy7Lndmq9R1HfCl0QgGpyfGXY55DqPJYVqHiop7sp7rdDJiCDoklRymPFq8cdQaBKlUMwvCZuLhhKAHdpvQt9Q8Qq4sTexfQXemUlNox5ZrSee7Gk9l6PjBuH5zE1S2ZEOgdf1RoqWRO3oeGTgUzHIKJM4LalZ2LbpVOMgJz1dpGYPsUKl4ZcVz1kc9jj8uW99bnLY2MmqaK2VzVQWemjiypiy2rHg6U7uGtUBa6xWrJIESJPv6Qn52jEpBDc58m3hTXpibjthLUsMdnIFESU6M0rlBrpl06z8xQDLBvDbcG1ks3dDRs3l9hXMZNrX7yYofYXNPmx3v2Cg6onmB6huzvdngbHnotbF6loxhqnH8pWiTsfspUUNmkGKSCbcszTSNpkvRxMezplcgpzISgJCYhAIusRNWCAoufPirSLp8HYdazJb5oLTBiVxLEHb48q7oLP', 0),
+(1260, 0, 'config', 'config_shared', '0', 0),
+(1259, 0, 'config', 'config_password', '1', 0),
+(1258, 0, 'config', 'config_secure', '0', 0),
+(1257, 0, 'config', 'config_compression', '0', 0),
 (4, 0, 'voucher', 'total_voucher_sort_order', '8', 0),
 (5, 0, 'voucher', 'total_voucher_status', '1', 0),
-(1058, 0, 'config', 'config_geocode', '52111', 0),
-(1059, 0, 'config', 'config_email', 'oskop17@gmail.com', 0),
-(1132, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
-(1131, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
-(1130, 0, 'config', 'config_file_max_size', '300000', 0),
-(1129, 0, 'config', 'config_encryption', 'Mg5vXDbhMgKjSbHXDqo50jzAdTZjE4IhV8aI58CR0VlBNPjVGvQcrTgd0CXMRaFhCUK2sfxdIpZEcM2ZJEBUmh37J0rYDb2XlUmoVdOgAL7s1AHm6IcmxpnAvW5d8mnekR5ApJYZzyU7cMOlL0CyxHMjH5NcNFPRaY9etHZYEckK5Sq0oKWCu6MGaMnv5lxJ3imwKp5ACCOpA464SRAy1MV2sSpmR8tpvTo136FaaGNis9VtIkLbkSNu0EWKWwdqCVjYPbnmNz1eMfSxbQokfkVZZJVQ8zWHLYD2XGoGCBI4Tp8rMRv4MglqnUGYus7GTlWhDoeWIQ6I01lCMUcdqumUp2oWmdQC6fCE9wdkEj0CzV5bkWBskjA0J3b0DHySKjXurRGfUj9iTs8kLP1uit7IMRA21v2dbM9f2qQ2jAXJgfKxbjTjBE96LJ9eIc7fBgovwHF94F0YHiFI7JxR5PIbwJBqStMMUCACw3ParzsulmDYVHJDAHw8Hs2U74ONI5FiC7GvDPb2PbzGYh4YYJgPXT1E1qXVOuZAyzp5uUeVPzvyLZP6Rd63gBVXy7Lndmq9R1HfCl0QgGpyfGXY55DqPJYVqHiop7sp7rdDJiCDoklRymPFq8cdQaBKlUMwvCZuLhhKAHdpvQt9Q8Qq4sTexfQXemUlNox5ZrSee7Gk9l6PjBuH5zE1S2ZEOgdf1RoqWRO3oeGTgUzHIKJM4LalZ2LbpVOMgJz1dpGYPsUKl4ZcVz1kc9jj8uW99bnLY2MmqaK2VzVQWemjiypiy2rHg6U7uGtUBa6xWrJIESJPv6Qn52jEpBDc58m3hTXpibjthLUsMdnIFESU6M0rlBrpl06z8xQDLBvDbcG1ks3dDRs3l9hXMZNrX7yYofYXNPmx3v2Cg6onmB6huzvdngbHnotbF6loxhqnH8pWiTsfspUUNmkGKSCbcszTSNpkvRxMezplcgpzISgJCYhAIusRNWCAoufPirSLp8HYdazJb5oLTBiVxLEHb48q7oLP', 0),
-(1128, 0, 'config', 'config_shared', '0', 0),
-(1127, 0, 'config', 'config_password', '1', 0),
-(1126, 0, 'config', 'config_secure', '0', 0),
-(1125, 0, 'config', 'config_compression', '0', 0),
+(1196, 0, 'config', 'config_comment', '', 0),
+(1197, 0, 'config', 'config_country_id', '100', 0),
+(1198, 0, 'config', 'config_zone_id', '1516', 0),
+(1199, 0, 'config', 'config_language', 'en-gb', 0),
+(1200, 0, 'config', 'config_admin_language', 'en-gb', 0),
+(1201, 0, 'config', 'config_currency', 'IND', 0),
+(1202, 0, 'config', 'config_currency_auto', '1', 0),
+(1203, 0, 'config', 'config_length_class_id', '1', 0),
+(1204, 0, 'config', 'config_weight_class_id', '1', 0),
+(1205, 0, 'config', 'config_product_count', '1', 0),
+(1206, 0, 'config', 'config_limit_admin', '20', 0),
+(1207, 0, 'config', 'config_review_status', '1', 0),
+(1208, 0, 'config', 'config_review_guest', '1', 0),
+(1209, 0, 'config', 'config_voucher_min', '1', 0),
+(1210, 0, 'config', 'config_voucher_max', '1000', 0),
+(1211, 0, 'config', 'config_tax', '1', 0),
+(1212, 0, 'config', 'config_tax_default', 'shipping', 0),
+(1213, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(1214, 0, 'config', 'config_customer_online', '0', 0),
+(1215, 0, 'config', 'config_customer_activity', '0', 0),
+(1216, 0, 'config', 'config_customer_search', '0', 0),
+(1217, 0, 'config', 'config_customer_group_id', '1', 0),
+(1218, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
+(1219, 0, 'config', 'config_customer_price', '0', 0),
+(1220, 0, 'config', 'config_login_attempts', '5', 0),
+(1221, 0, 'config', 'config_account_id', '3', 0),
+(1222, 0, 'config', 'config_invoice_prefix', 'INV-2019-00', 0),
+(1223, 0, 'config', 'config_cart_weight', '1', 0),
+(1224, 0, 'config', 'config_checkout_guest', '1', 0),
+(1225, 0, 'config', 'config_checkout_id', '5', 0),
+(1226, 0, 'config', 'config_order_status_id', '1', 0),
+(1227, 0, 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', 1),
+(1228, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
+(1229, 0, 'config', 'config_fraud_status_id', '7', 0),
+(1230, 0, 'config', 'config_api_id', '1', 0),
+(1231, 0, 'config', 'config_stock_display', '0', 0),
+(1232, 0, 'config', 'config_stock_warning', '0', 0),
+(1233, 0, 'config', 'config_stock_checkout', '0', 0),
+(1234, 0, 'config', 'config_affiliate_group_id', '1', 0),
+(1235, 0, 'config', 'config_affiliate_approval', '0', 0),
 (95, 0, 'payment_free_checkout', 'payment_free_checkout_status', '1', 0),
 (96, 0, 'payment_free_checkout', 'free_checkout_order_status_id', '1', 0),
 (97, 0, 'payment_free_checkout', 'payment_free_checkout_sort_order', '1', 0),
@@ -4002,14 +4014,27 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (198, 0, 'report_marketing', 'report_marketing_sort_order', '12', 0),
 (199, 0, 'developer', 'developer_theme', '1', 0),
 (200, 0, 'developer', 'developer_sass', '1', 0),
-(1117, 0, 'config', 'config_mail_smtp_password', '', 0),
-(1118, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(1119, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(1120, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
-(1121, 0, 'config', 'config_mail_alert_email', '', 0),
-(1122, 0, 'config', 'config_maintenance', '0', 0),
-(1123, 0, 'config', 'config_seo_url', '0', 0),
-(1124, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(1236, 0, 'config', 'config_affiliate_auto', '0', 0),
+(1237, 0, 'config', 'config_affiliate_commission', '5', 0),
+(1238, 0, 'config', 'config_affiliate_id', '4', 0),
+(1239, 0, 'config', 'config_return_id', '0', 0),
+(1240, 0, 'config', 'config_return_status_id', '2', 0),
+(1241, 0, 'config', 'config_captcha', '', 0),
+(1242, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
+(1243, 0, 'config', 'config_logo', 'catalog/Logo/BanyuroroKidulWetans.png', 0),
+(1244, 0, 'config', 'config_icon', 'catalog/Logo/BanyuroroKidulWetans.png', 0),
+(1245, 0, 'config', 'config_mail_engine', 'mail', 0),
+(1246, 0, 'config', 'config_mail_parameter', '', 0),
+(1247, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(1248, 0, 'config', 'config_mail_smtp_username', '', 0),
+(1249, 0, 'config', 'config_mail_smtp_password', '', 0),
+(1250, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(1251, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(1252, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
+(1253, 0, 'config', 'config_mail_alert_email', '', 0),
+(1254, 0, 'config', 'config_maintenance', '0', 0),
+(1255, 0, 'config', 'config_seo_url', '0', 0),
+(1256, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
 (573, 0, 'theme_default', 'theme_default_status', '1', 0),
 (572, 0, 'theme_default', 'theme_default_directory', 'mintleaf', 0),
 (684, 0, 'theme_mintleaf', 'theme_mintleaf_product_limit', '15', 0),
@@ -4034,18 +4059,19 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (703, 0, 'theme_mintleaf', 'theme_mintleaf_image_cart_height', '47', 0),
 (704, 0, 'theme_mintleaf', 'theme_mintleaf_image_location_width', '268', 0),
 (705, 0, 'theme_mintleaf', 'theme_mintleaf_image_location_height', '50', 0),
-(1060, 0, 'config', 'config_telephone', '123456789', 0),
-(1052, 0, 'config', 'config_meta_keyword', '', 0),
-(1053, 0, 'config', 'config_theme', 'mintleaf', 0),
-(1054, 0, 'config', 'config_layout_id', '4', 0),
-(1055, 0, 'config', 'config_name', 'Banyuro', 0),
-(1056, 0, 'config', 'config_owner', 'Kelompok 2', 0),
-(1057, 0, 'config', 'config_address', 'Jln. Mujaher 12, Tegalsari, Tegal Barat, KotaTegal', 0),
-(1051, 0, 'config', 'config_meta_description', 'Banyuro', 0),
-(1050, 0, 'config', 'config_meta_title', 'Banyuro', 0),
-(1133, 0, 'config', 'config_error_display', '1', 0),
-(1134, 0, 'config', 'config_error_log', '1', 0),
-(1135, 0, 'config', 'config_error_filename', 'error.log', 0),
+(1195, 0, 'config', 'config_open', '', 0),
+(1193, 0, 'config', 'config_fax', '', 0),
+(1192, 0, 'config', 'config_telephone', '123456789', 0),
+(1191, 0, 'config', 'config_email', 'oskop17@gmail.com', 0),
+(1190, 0, 'config', 'config_geocode', '52111', 0),
+(1188, 0, 'config', 'config_owner', 'Kelompok 2', 0),
+(1189, 0, 'config', 'config_address', 'Jln. Mujaher 12, Tegalsari, Tegal Barat, KotaTegal', 0),
+(1187, 0, 'config', 'config_name', 'Banyuro', 0),
+(1184, 0, 'config', 'config_meta_keyword', '', 0),
+(1185, 0, 'config', 'config_theme', 'mintleaf', 0),
+(1186, 0, 'config', 'config_layout_id', '4', 0),
+(1183, 0, 'config', 'config_meta_description', 'Banyuro', 0),
+(1182, 0, 'config', 'config_meta_title', 'Banyuro', 0),
 (1136, 0, 'shipping_indo', 'shipping_indo_tax_class_id', '0', 0),
 (1137, 0, 'shipping_indo', 'shipping_indo_status', '1', 0),
 (1138, 0, 'shipping_indo', 'shipping_indo_sort_order', '', 0),
@@ -4055,30 +4081,26 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (1142, 0, 'shipping_indo', 'shipping_indo_3_status', '0', 0),
 (1146, 0, 'shipping_flat', 'shipping_flat_status', '1', 0),
 (1147, 0, 'shipping_flat', 'shipping_flat_sort_order', '1', 0),
-(1148, 0, 'payment_bank_bni', 'payment_bank_bni_bank1', 'Transfer ke Rek. BNI 062383719', 0),
-(1149, 0, 'payment_bank_bni', 'payment_bank_bni_total', '', 0),
-(1150, 0, 'payment_bank_bni', 'payment_bank_bni_order_status_id', '7', 0),
-(1151, 0, 'payment_bank_bni', 'payment_bank_bni_geo_zone_id', '0', 0),
-(1152, 0, 'payment_bank_bni', 'payment_bank_bni_status', '1', 0),
-(1153, 0, 'payment_bank_bni', 'payment_bank_bni_sort_order', '3', 0),
-(1154, 0, 'payment_bank_bca', 'payment_bank_bca_bank1', 'ilham 0834567890', 0),
-(1155, 0, 'payment_bank_bca', 'payment_bank_bca_total', '2500', 0),
-(1156, 0, 'payment_bank_bca', 'payment_bank_bca_order_status_id', '2', 0),
-(1157, 0, 'payment_bank_bca', 'payment_bank_bca_geo_zone_id', '0', 0),
-(1158, 0, 'payment_bank_bca', 'payment_bank_bca_status', '1', 0),
-(1159, 0, 'payment_bank_bca', 'payment_bank_bca_sort_order', '', 0),
-(1160, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_bank1', 'ilham 0865432345', 0),
-(1161, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_total', '2500', 0),
-(1162, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_order_status_id', '2', 0),
-(1163, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_geo_zone_id', '0', 0),
-(1164, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_status', '1', 0),
-(1165, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_sort_order', '', 0),
-(1166, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_bank1', 'ilham 089765432345', 0),
-(1167, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_total', '', 0),
-(1168, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_order_status_id', '2', 0),
-(1169, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_geo_zone_id', '0', 0),
-(1170, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_status', '1', 0),
-(1171, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_sort_order', '', 0),
+(1278, 0, 'payment_bank_bni', 'payment_bank_bni_status', '1', 0),
+(1277, 0, 'payment_bank_bni', 'payment_bank_bni_geo_zone_id', '0', 0),
+(1276, 0, 'payment_bank_bni', 'payment_bank_bni_order_status_id', '1', 0),
+(1275, 0, 'payment_bank_bni', 'payment_bank_bni_total', '', 0),
+(1274, 0, 'payment_bank_bni', 'payment_bank_bni_bank1', 'Transfer ke Rek. BNI 062383719', 0),
+(1272, 0, 'payment_bank_bca', 'payment_bank_bca_status', '1', 0),
+(1271, 0, 'payment_bank_bca', 'payment_bank_bca_geo_zone_id', '0', 0),
+(1270, 0, 'payment_bank_bca', 'payment_bank_bca_order_status_id', '1', 0),
+(1269, 0, 'payment_bank_bca', 'payment_bank_bca_total', '2500', 0),
+(1268, 0, 'payment_bank_bca', 'payment_bank_bca_bank1', 'ilham 0834567890', 0),
+(1290, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_status', '1', 0),
+(1289, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_geo_zone_id', '0', 0),
+(1288, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_order_status_id', '1', 0),
+(1287, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_total', '2500', 0),
+(1286, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_bank1', 'ilham 0865432345', 0),
+(1284, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_status', '1', 0),
+(1283, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_geo_zone_id', '0', 0),
+(1282, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_order_status_id', '1', 0),
+(1281, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_total', '', 0),
+(1280, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_bank1', 'ilham 089765432345', 0),
 (1172, 0, 'shipping_hp_gojek', 'shipping_hp_gojek_cost', '9000', 0),
 (1173, 0, 'shipping_hp_gojek', 'shipping_hp_gojek_tax_class_id', '0', 0),
 (1174, 0, 'shipping_hp_gojek', 'shipping_hp_gojek_geo_zone_id', '0', 0),
@@ -4088,7 +4110,11 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (1178, 0, 'shipping_hp_grab', 'shipping_hp_grab_tax_class_id', '0', 0),
 (1179, 0, 'shipping_hp_grab', 'shipping_hp_grab_geo_zone_id', '0', 0),
 (1180, 0, 'shipping_hp_grab', 'shipping_hp_grab_status', '1', 0),
-(1181, 0, 'shipping_hp_grab', 'shipping_hp_grab_sort_order', '', 0);
+(1181, 0, 'shipping_hp_grab', 'shipping_hp_grab_sort_order', '', 0),
+(1273, 0, 'payment_bank_bca', 'payment_bank_bca_sort_order', '', 0),
+(1279, 0, 'payment_bank_bni', 'payment_bank_bni_sort_order', '3', 0),
+(1285, 0, 'payment_bank_bri_syariah', 'payment_bank_bri_syariah_sort_order', '', 0),
+(1291, 0, 'payment_bank_mandiri', 'payment_bank_mandiri_sort_order', '', 0);
 
 -- --------------------------------------------------------
 
@@ -4131,7 +4157,7 @@ CREATE TABLE `oc_statistics` (
 --
 
 INSERT INTO `oc_statistics` (`statistics_id`, `code`, `value`) VALUES
-(1, 'order_sale', '1001500.0000'),
+(1, 'order_sale', '1671000.0000'),
 (2, 'order_processing', '0.0000'),
 (3, 'order_complete', '0.0000'),
 (4, 'order_other', '0.0000'),
@@ -9605,7 +9631,7 @@ ALTER TABLE `oc_api_ip`
 -- AUTO_INCREMENT for table `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
-  MODIFY `api_session_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `api_session_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `oc_attribute`
@@ -9629,13 +9655,13 @@ ALTER TABLE `oc_banner`
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
 -- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `oc_category`
@@ -9881,13 +9907,13 @@ ALTER TABLE `oc_option_value`
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `oc_order_option`
@@ -9899,7 +9925,7 @@ ALTER TABLE `oc_order_option`
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
@@ -9929,7 +9955,7 @@ ALTER TABLE `oc_order_status`
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
@@ -10031,7 +10057,7 @@ ALTER TABLE `oc_seo_url`
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1182;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1292;
 
 --
 -- AUTO_INCREMENT for table `oc_statistics`
