@@ -1,5 +1,10 @@
 # OpenCart
 
+## Kelompok 1 5D D4-TI POLITEKNIK HARAPAN BERSAMA
+- Ilham Muzani
+- Mokhamad Wijaya
+- Tri Puji Indriyani
+
 ## Overview
 
 OpenCart is a free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.
